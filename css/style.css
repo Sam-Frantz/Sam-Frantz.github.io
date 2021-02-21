@@ -104,6 +104,11 @@ img {
   color:rgb(255, 255, 255)
 }
 
+.showcase-form h3 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 .showcase-form .form-control {
   margin: 30px 1px 20px;
 }
