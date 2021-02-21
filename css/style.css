@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Lemonada', sans-serif;
-  color: #333;
+  color: #222;
   line-height: 1.6;
 }
 
@@ -44,7 +44,7 @@ img {
 /* Navbar styling */
 
 .navbar {
-  background-color: var(--primary-color);
+  background: radial-gradient(farthest-corner at 40px 40px, #000000, #333333);
   color: #fff;
   height: 70px;
 }
@@ -78,6 +78,7 @@ img {
 
 .showcase h1 {
   font-size: 40px;
+  text-shadow: 1px 1px #444444;
 }
 
 .showcase p {
@@ -101,12 +102,14 @@ img {
 }
 
 .showcase-form h2 {
-  color:rgb(255, 255, 255)
+  color:rgb(255, 255, 255);
+  font-family: 'Lemonada', sans-serif;
 }
 
 .showcase-form h3 {
   margin-bottom: 20px;
   margin-top: 40px;
+  font-family: 'Lemonada', sans-serif;
 }
 
 .showcase-form .form-control {
