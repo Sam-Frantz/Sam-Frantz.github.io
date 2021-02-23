@@ -115,6 +115,21 @@ img {
   font-family: 'Lemonada', sans-serif;
 }
 
+/* Contact page background */
+.showcase-contact {
+  height: 750px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+  font-family: 'Lemonada', sans-serif;
+}
+
+.showcase-contact .grid {
+  justify-content: left;
+  align-items: baseline;
+  padding-top: 20%;
+}
+
 /* Iframe */
 
 .about {
