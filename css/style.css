@@ -118,7 +118,7 @@ img {
 /* Iframe */
 
 .about {
-  height: 600px;
+  height: 650px;
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
@@ -242,21 +242,24 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .social li
 {
   list-style: none;
 }
+
 .social li a
 {
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px;
   filter: invert(1);
   transform: scale(.49);
   transition: 0.5s;
+  max-height: 10px;
 }
 .social li a:hover
 {
-  transform: scale(0.5) translateY(-15px);
+  transform: scale(0.7) translateY(-15px);
 }
 
 
