@@ -74,6 +74,7 @@ img {
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
+  font-family: 'Lemonada', sans-serif;
 }
 
 .showcase h1 {
@@ -107,43 +108,17 @@ img {
 }
 
 .showcase-form h3 {
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: xx-large;
   font-family: 'Lemonada', sans-serif;
 }
 
-.showcase-form .form-control {
-  margin: 30px 1px 20px;
-}
-
-.showcase-form input[type='text'],
-.showcase-form input[type='email'] {
-  border: 0;
-  border-bottom: 1px solid #68706d;
-  width: 100%;
-  padding: 3px;
-  font-size: 16px;
-}
-
-.showcase-form input:focus {
-  outline: none;
-}
-
-.showcase::before,
-.showcase::after {
-  content: '';
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: #1a4a04;
-}
-
-/* About */
+/* Iframe */
 
 .about {
-  height: 400px;
+  height: 600px;
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
@@ -159,7 +134,7 @@ img {
 
 .about .grid {
   overflow: hidden;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
   gap: 30px;
 }
 
@@ -194,12 +169,31 @@ img {
 
 .card {
   background-color: rgb(126, 150, 118);
-  color: #333;
+  color: #555;
   opacity: .95;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   padding: 20px;
   margin: 10px;
+  position: relative;
+}
+
+.card a {
+  position: relative;
+  display: inline-block;
+  color: #555;
+  overflow: hidden;
+  background: linear-gradient(to right, #666, #444 40%, #333 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.card a:hover {
+  background-position: 0 100%;
 }
 
 .btn {
@@ -324,6 +318,10 @@ body, html{
     color:#ddd;
 }
 
+.section-dark .border h1{
+  color: #f4f4f4;
+}
+
 .ptext{
     position: absolute;
     top: 50%;
@@ -373,6 +371,7 @@ body, html{
     list-style: none;
     margin: 0 15px;
 }
+
 .social-menu ul li .fa {
     font-size:30px;
     line-height: 60px;
