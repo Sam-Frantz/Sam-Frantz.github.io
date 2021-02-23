@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
     <title> Sam Frantz </title>
   </head>
   <body>
@@ -18,7 +19,6 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="Music.html">Music</a></li> -->
             <li><a href="Other%20Projects.html">Other Projects</a></li>
           </ul>
         </nav>
@@ -28,29 +28,45 @@
     <!-- Showcase -->
     <section class="showcase">
       <div class="container grid">
+        
         <div class="showcase-text">
-          <h1>design portfolio</h1>
-          <p></p>
-          <a href="https://open.spotify.com/artist/0MthcnTVKVJaY1YpnFPxzt" class="btn
-          btn-outline">Spotify</a>
+          <h1>Design Portfolio</h1>
+            <object data="myfile.pdf" type="application/pdf" width="100%" height="100%">
+              <a href="Resume_2_20.pdf">Resume</a>
+            </object>
         </div>
         
         <div class="showcase-form card">
-          <h2>Previous work links</h2>
-          <a href="https://www.612mediaco.com"><h3><u>612 Media</u></h3></a>
-          <a href="https://investinghopefoundation.org"><h3><u>Investing Hope</u></h3></a>
-          <a href="https://sadoxen.com"><h3><u>Sad Oxen</u></h3></a>
+          <a href="https://www.612mediaco.com" target="myFrame" onclick="resizeIframe()"><h3>612 Media</h3></a>
+          <a href="https://investinghopefoundation.org" target="myFrame" onclick="resizeIframe()"><h3>Investing Hope</h3></a>
+          <a href="https://sadoxen.com" target="myFrame" onclick="resizeIframe()"><h3>Sad Oxen</h3></a>
         </div>
+      
       </div>
     </section>
+
     <div class="about">
       <div class="container grid">
         <div class="about-text">
+          <div class="viewer">
+            <iframe src="demo-page.html" name="myFrame" width="725" height="400" frameBorder="0"></iframe>
+          </div>
         </div>
       </div>
-    </div>
+
     <ul class="social">
-      <li><a href="https://www.instagram.com/sadoxen/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+      <li><a href="https://www.instagram.com/sadoxen/"><img src="https://simpleicons.org/icons/instagram.svg"></a></li>
+      <li><a href="https://github.com/Sam-Frantz"><img src="https://simpleicons.org/icons/github.svg"></a></li>
     </ul>
+
   </body>
+
+  <script type="text/javascript">
+    function resizeIframe(myFrame) {
+      winHeight = $(window).height();
+      winWidth = $(window).width();
+      myFrame.height = winHeight - "200px";
+      myFrame.width = winWidth - "100px";
+    }
+  </script>  
 </html>
