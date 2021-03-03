@@ -2,7 +2,7 @@
 
 
 :root {
-  --primary-color: #000000;
+  --primary-color: #161616;
 }
 
 
@@ -47,6 +47,7 @@ img {
   background: radial-gradient(farthest-corner at 40px 40px, #000000, #333333);
   color: #fff;
   height: 70px;
+  top: 0;
 }
 
 .navbar ul {
@@ -79,7 +80,7 @@ img {
 
 .showcase h1 {
   font-size: 40px;
-  text-shadow: 1px 1px #444444;
+  text-shadow: 1px 1px #9c9c9c;
 }
 
 .showcase p {
@@ -88,7 +89,7 @@ img {
 
 .showcase .grid {
   overflow: visible;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 40% 60%;
   gap: 30px;
 }
 
@@ -185,12 +186,12 @@ img {
 .card {
   background-color: rgb(126, 150, 118);
   color: #555;
-  opacity: .95;
+  opacity: .6;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   padding: 20px;
-  margin: 10px;
-  position: relative;
+  margin-bottom: 600px;
+  position: flex;
 }
 
 .card a {
@@ -277,6 +278,48 @@ img {
   transform: scale(0.7) translateY(-15px);
 }
 
+.transition {
+  -webkit-transition: all 1000s linear;
+  -moz-transition: all 1000s linear;
+  -ms-transition: all 1000s linear;
+  -o-transition: all 1000s linear;
+  transition: all 1000s linear;
+}
+.translateAnimationClass { 
+  -webkit-transform: rotateX(400deg) rotateY(14400deg);
+  -moz-transform: rotateX(43200deg) rotateY(14400deg);
+  -ms-transform: rotateX(43200deg) rotateY(14400deg);
+  -o-transform: rotateX(400deg) rotateY(14400deg);
+  transform: rotateX(43200deg) rotateY(14400deg); 
+}
+.animation {
+  -webkit-animation: rotator 25s linear infinite;
+  -moz-animation: rotator 25s linear infinite;
+  -ms-animation: rotator 25s linear infinite;
+  -o-animation: rotator 25s linear infinite;
+  animation: rotator 25s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0%   { -webkit-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -webkit-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-moz-keyframes rotator {
+  0%   { -moz-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -moz-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-ms-keyframes rotator {
+  0%   { -ms-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -ms-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-o-keyframes rotator {
+  0%   { -o-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -o-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@keyframes rotator {
+  0%   { transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { transform: rotateX(1080deg) rotateY(360deg);  }
+}
 
 /* Other Projects */
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500&display=swap');
@@ -297,9 +340,7 @@ body, html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
-    
     /*
     fixed= parallax
     scroll= static
@@ -309,6 +350,7 @@ body, html{
 .png1{
     background-image: url('../img/image1.jpg');
     min-height:100%;
+    background-position: top;
 }
 
 .png2{
@@ -397,6 +439,8 @@ body, html{
     color: #000;
 }
 
+
+
 .social-menu ul li a {
     position: relative;
     display: block;
@@ -414,4 +458,15 @@ body, html{
 }
 .social-menu ul nth-child a:hover {
     background-color: #3b5999;;
+}
+
+
+.circle {
+  display: flex;
+  background: black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 10%;
+  background: radial-gradient(circle at 100px 100px,  rgb(126, 150, 118), #000);
 }
