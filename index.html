@@ -35,7 +35,10 @@
               <a href="Resume_2_20.pdf">Resume</a>
             </object>
         </div>
-        
+        <div class='rotator animation'>
+          <figure class="circle"></figure>
+        </div>
+
         <div class="showcase-form card">
           <a href="https://www.612mediaco.com" target="myFrame" onclick="resizeIframe()"><h3>612 Media</h3></a>
           <a href="https://investinghopefoundation.org" target="myFrame" onclick="resizeIframe()"><h3>Investing Hope</h3></a>
@@ -60,7 +63,10 @@
     </ul>
 
   </body>
-
+  <script type="text/javascript">
+    window.onload = function() { 
+      document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); };
+  </script>
   <script type="text/javascript">
     function resizeIframe(myFrame) {
       winHeight = $(window).height();
