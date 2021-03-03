@@ -328,7 +328,6 @@ body, html{
     height:100%;
     margin:0;
     font-size:16px;
-    font-family: Halant,"Lato", sans-serif;
     font-weight:400;
     line-height:1.8em;
     columns: #666666;
@@ -369,6 +368,7 @@ body, html{
 }
 
 .section-light{
+    font-family: Halant, "Lato", serif;
     background-color: #f4f4f4;
     color: #666666
 }
@@ -380,7 +380,9 @@ body, html{
 
 .section-dark .border h1{
   color: #f4f4f4;
+  font-family: Halant, "Lato", serif;
 }
+
 
 .ptext{
     position: absolute;
@@ -389,7 +391,7 @@ body, html{
     text-align: center;
     color:#000;
     font-size: 27px;
-    font-family: Halant;
+    font-family: Halant, "Lato", serif;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
