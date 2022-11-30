@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=.9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Sam Frantz </title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Sam Frantz</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Other%20Projects.html">Other Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        
+        <div class="showcase-text">
+          <h1>Design Portfolio</h1>
+              <a href="Copy of Resume (15).pdf">Resume</a>
+            </object>
+        </div>
+        <div class='rotator animation'>
+          <figure class="circle"></figure>
+        </div>
+        <div class="showcase-form card">
+          <a href="https://farsidecoffeemn.my-free.website" target="myFrame" onclick="resizeIframe()"><h3>Farside Coffee</h3></a>
+          <a href="https://sadoxen.com" target="myFrame" onclick="resizeIframe()"><h3>Sad Oxen</h3></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="about">
+      <div class="container grid">
+      <div class="about-text">
+          <div class="viewer">
+            <iframe src="demo-page.html" name="myFrame" width="725" height="400" frameBorder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+    <ul class="social">
+      <li><a href="https://www.instagram.com/sadoxen/"><img src="https://simpleicons.org/icons/instagram.svg"></a></li>
+      <li><a href="https://github.com/Sam-Frantz"><img src="https://simpleicons.org/icons/github.svg"></a></li>
+    </ul>
+    <div class="spacer">
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.onload = function() { 
+      document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); };
+  </script>
+
+  <script type="text/javascript">
+    function resizeIframe(myFrame) {
+      winHeight = $(window).height();
+      winWidth = $(window).width();
+      myFrame.height = winHeight - "200px";
+      myFrame.width = winWidth - "50px";
+    }
+  </script>  
+</html>
