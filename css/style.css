@@ -120,6 +120,11 @@ img {
   font-family: 'Lemonada', sans-serif;
 }
 
+.link {
+  background-color: transparent;
+  border: transparent;
+}
+
 /* Contact page background */
 .showcase-contact {
   height: inherit;
