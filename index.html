@@ -180,14 +180,6 @@
            this.gameObjects.push(new CellReset(this.context, x, y));
           }
         }
-  setTimeout(GameWorldReset, 3000);
-   let gameWorld = new GameWorld('canvas');
-     for (let y = 0; y < GameWorld.numRows; y++) {   
-        for (let x = 0; x < GameWorld.numColumns; x++) {
-           this.gameObjects.push(new Cell(this.context, x, y));
-          }
-        }   
-    }
   </script>
   <script type="text/javascript">
     function resizeIframe(myFrame) {
